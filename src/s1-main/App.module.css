@@ -3,9 +3,17 @@
 }
 
 .hw {
-
+    margin: 20px;
 }
 
 .hwTitle {
-
+    width: 165px;
+    height: 27px;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #000000;
 }
