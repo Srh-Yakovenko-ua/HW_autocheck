@@ -41,9 +41,11 @@ const MessageSender = (props: any) => {
 
     return (
         <>
-            {messages.map((m) => (
-                <M key={'message' + m.id} message={m} />
+            <>
+                {messages.map((m) => (
+                <M key={'message' + m.id} message={m}/>
             ))}
+            </>
 
             <div id={'hw1-send-message-form'} className={s.sendForm}>
                 <textarea
