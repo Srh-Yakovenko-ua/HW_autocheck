@@ -5,29 +5,27 @@ import s from './Affairs.module.css'
 
 type AffairsPropsType = {
     data: AffairType[] // need to fix any
-    setFilter: (args : FilterType) => void
-    deleteAffairCallback: (id : number) => void
+    setFilter: (args: FilterType) => void
+    deleteAffairCallback: (id: number) => void
     filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
-    const setAll = () => {
-        props.setFilter('all')
-    }
-    const setHigh = () => {
-        props.setFilter('high')
-    }
-    const setMiddle = () => {
-        props.setFilter('middle')
-    }
-    const setLow = () => {
-        props.setFilter('low')
-    }
+    const setAll = () => props.setFilter('all')
+    const setHigh = () => props.setFilter('high')
+    const setMiddle = () => props.setFilter('middle')
+    const setLow = () => props.setFilter('low')
 
-    const cnAll = s.button + ' ' + s.all + (props.filter === 'all' ? ' ' + s.active : '')
-    const cnHigh = s.button + ' ' + s.high + (props.filter === 'high' ? ' ' + s.active : '')
-    const cnMiddle = s.button + ' ' + s.middle + (props.filter === 'middle' ? ' ' + s.active : '')
-    const cnLow = s.button + ' ' + s.low + (props.filter === 'low' ? ' ' + s.active : '')
+
+    const cnAll = `${s.button} ${s.all} ${props.filter === 'all' ? s.active : ''}`
+    const cnHigh = `${s.button} ${s.high} ${props.filter === 'high' ? s.active : ''}`
+    const cnMiddle = `${s.button} ${s.middle} ${props.filter === 'middle' ? s.active : ''}`
+    const cnLow = `${s.button} ${s.low} ${props.filter === 'low' ? s.active : ''}`
+
+    // const cnAll = `${s.button} ${s.all} ${props.filter === 'all' ? s.active : ''}`
+    // const cnHigh = s.button + ' ' + s.high + (props.filter === 'high' ? ' ' + s.active : '')
+    // const cnMiddle = s.button + ' ' + s.middle + (props.filter === 'middle' ? ' ' + s.active : '')
+    // const cnLow = s.button + ' ' + s.low + (props.filter === 'low' ? ' ' + s.active : '')
 
     const mappedAffairs = props.data.map((a: AffairType) => (
         <Affair
