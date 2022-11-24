@@ -3,7 +3,7 @@ import burgerIcon from './burger.svg'
 import s from './Header.module.css'
 import {useLocation} from 'react-router-dom'
 import {PATH} from '../Pages'
-import s2 from '../../../s1-main/App.module.css';
+
 
 type PropsType = {
     handleOpen: () => void
@@ -32,9 +32,9 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
                     onClick={handleOpen}
                     alt={'open menu'}
                 />
-                <div className={s2.hwTitle}>Homework #5</div>
+                <h1 >{pageName}</h1>
             </div>
-            <h1>{pageName}</h1>
+
         </>
     )
 }
