@@ -1,23 +1,47 @@
 .item {
+    height: 50px;
+    border-bottom: 1px solid #E5E5E5;;
 }
 
 .item:last-of-type {
+    border-bottom: none;
 }
 
 .users {
+    border-collapse: collapse;
 }
 
 .buttonsContainer {
+    display: flex;
+    gap: 15px;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    width: max-content;
+    height: 400px;
 }
 
 .thead {
+    height: 35px;
+    padding-left: 17px;
+
+    background-color: #E5E5E5;
+    border: none;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .nameCol {
+    width: 300px;
+    padding-left: 17px;
 }
 
 .ageCol {
+    width: 300px;
 }
