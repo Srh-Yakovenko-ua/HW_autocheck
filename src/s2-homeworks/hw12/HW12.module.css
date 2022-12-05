@@ -19,5 +19,6 @@ html {
 }
 
 .select {
-
+    border: 1px solid #323232;
+    border-radius: 2px;
 }
