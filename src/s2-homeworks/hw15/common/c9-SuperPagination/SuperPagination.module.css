@@ -1,0 +1,31 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text1 {
+    padding-left: 22px;
+
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #0D0B0C;
+}
+
+.text2 {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #0D0B0C;
+}
+.selectedPagination {
+    width: 40px;
+    padding: 3px 4px;
+}
