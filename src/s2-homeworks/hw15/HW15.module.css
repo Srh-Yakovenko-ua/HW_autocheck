@@ -1,0 +1,67 @@
+.tech {
+    width: 250px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+
+}
+
+.developer {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.techHeader {
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.developerHeader {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.row {
+    width: 606px;
+    display: flex;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 12px 12px;
+
+}
+
+.rowHeader {
+    width: 606px;
+    display: flex;
+    margin-top: 40px;
+    background: #E5E5E5;
+    padding: 11px 0 9px 17px;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
